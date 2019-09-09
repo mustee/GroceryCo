@@ -18,7 +18,7 @@ Data is stored in json and txt files in the console application. Files can be ed
     * Promotions: Applying promotions to sales
 
 # Business Logic & Design choice
-- Repository pattern is used to access data. Conccrete repositoroy classes can be reimplemented to change data store from file system to database.
+- Repository pattern is used to access data. Concreate repository classes can be reimplemented to change data store from file system to database.
 - Service layer acts as a bridge between data and presentation layer. Business logic is implemented here.
 - Pricing strategy is used to determine whether to chose the lowest or highest prices when there are multiple active promotions.
 
