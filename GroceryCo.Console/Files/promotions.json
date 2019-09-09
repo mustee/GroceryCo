@@ -1,0 +1,46 @@
+[
+  {
+    "Name": "OnSale test",
+    "ProductName": "Apple",
+    "PromotionType": 0,
+    "Quantity": null,
+    "Price": 2.0,
+    "Discount": null,
+    "StartDate": "2019-09-06T15: 18: 06.1787Z",
+    "EndDate": "2019-09-09T15: 18: 06.1787025Z",
+    "Description": null
+  },
+  {
+    "Name": "OnSale test 1",
+    "ProductName": "Apple",
+    "PromotionType": 0,
+    "Quantity": null,
+    "Price": 1.5,
+    "Discount": null,
+    "StartDate": "2019-09-09T15: 18: 06.1787Z",
+    "EndDate": "2019-09-11T15: 18: 06.1787025Z",
+    "Description": null
+  },
+  {
+    "Name": "Grouped test",
+    "ProductName": "Banana",
+    "PromotionType": 1,
+    "Quantity": 2,
+    "Price": 3.0,
+    "Discount": null,
+    "StartDate": "2019-09-06T15:44:39.5945412Z",
+    "EndDate": "2019-09-09T15:44:39.5945443Z",
+    "Description": null
+  },
+  {
+    "Name": "Additional Sale test",
+    "ProductName": "Orange",
+    "PromotionType": 2,
+    "Quantity": 1,
+    "Price": null,
+    "Discount": 0.5,
+    "StartDate": "2019-09-06T15:51:20.2301958Z",
+    "EndDate": "2019-09-09T15:51:20.2301993Z",
+    "Description": null
+  }
+]
