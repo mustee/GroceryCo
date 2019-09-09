@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using GroceryCo.Data.Repositories;
 using GroceryCo.Service.Exceptions;
 using GroceryCo.Service.Models;
+using System;
 
 namespace GroceryCo.Service.Impl
 {
@@ -20,6 +21,8 @@ namespace GroceryCo.Service.Impl
 
         public Sale Checkout(string[] productNames, PricingStrategy pricingStrategy = PricingStrategy.Lowest)
         {
+            if(productNames == null || !productNames.Any()) throw new ArgumentException(nameof(productNames))
+            
             var saleItems = new List<SaleItem>();
             foreach (var productName in productNames.GroupBy(x => x))
             {

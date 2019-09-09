@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using GroceryCo.Data.Models;
 using GroceryCo.Data.Repositories;
 using GroceryCo.Service.Exceptions;
@@ -17,6 +18,10 @@ namespace GroceryCo.Service.Impl
 
         public decimal Resolve(string productName, decimal productPrice, int quantity, PricingStrategy pricingStrategy)
         {
+            if (string.IsNullOrWhiteSpace(productName)) throw new ArgumentException(nameof(productName));
+
+            if(productPrice == default) throw new ArgumentException(nameof(productPrice));
+
             var price = PromotionPrice(productName, productPrice, quantity, pricingStrategy);
 
             return price ?? (productPrice * quantity);
